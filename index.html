@@ -18,26 +18,26 @@
 </head>
 <body>
     <header id="top">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg sticky-top">
             <a class="navbar-brand" href="https://www.facebook.com/">
                 <i class="fab fa-facebook-square"><span class="facebook-font-logo">facebook</span></i> 
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">HISTORIA</a>
+                  <a class="nav-link" href="#">Historia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ESTADÍSTICAS</a>
+                  <a class="nav-link" href="#">Estadísticas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FOTOS</a>
+                    <a class="nav-link" href="#">Fotos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="btn btn-default btn-lg page-scroll btn-primary">Registrarse</a>
+                    <a href="#about" class="btn btn-default btn-sm page-scroll btn-primary">Registrarme</a>
                 </li>
               </ul>
             </div>
@@ -45,12 +45,14 @@
     </header>
     
     <main>
+        <img class="fb-logo-svg" src="images/facebook-logo.svg" alt="fb logo"/>
+        
         <div class="content1">
             <div class="img-content1">
                 <img src="images/socialmedia.jpg" alt="Imagen de celular en la app Facebook" />
             </div>
             <div class="text-content1">
-                <h1>Un poco de historia</h1>
+                <h2>Un poco de historia</h2>
                 <hr />
                 <p>
                     Facebook fue creado por Mark Zuckerberg, quien entonces era un
@@ -79,7 +81,7 @@
                     <div class="icon-details">
                         <span class="expansion"></span>
                     </div>
-                    <h3>Expansión</h3>
+                    <h3 class="subtitle">Expansión</h3>
                     <p>
                         En el 2006, Facebook ya no era un sitio web solo para estudiantes
                         de universidades de Estados Unidos, ahora estaba disponible para
@@ -104,7 +106,7 @@
                     <div class="icon-details">
                         <span class="features"></span>
                     </div>
-                    <h3>Características</h3>
+                    <h3 class="subtitle">Características</h3>
                     <p>
                         Las características más destacadas de esta red: Interactiva:
                         Brinda facilidades al usuario de interactuar con personas de esta
@@ -129,7 +131,7 @@
                     <div class="icon-details">
                         <span class="grooming"></span>
                     </div>
-                    <h3>Grooming</h3>
+                    <h3 class="subtitle">Grooming</h3>
                     <p>
                         Una controversia ligada a Facebook, tiene que ver con la
                         facilidad de esta red de propiciar la creación de perfiles, lo
@@ -153,7 +155,7 @@
         </div>
 
         <div class="content3">
-            <h1>Estadísticas</h1>
+            <h2>Estadísticas</h2>
             <hr />
             <p>Basada en cuentas de usuarios activos por mes, en millones.</p>
             <div class="content-estadisticas">
@@ -202,18 +204,21 @@
                 allowfullscreen></iframe>
         </div>
 
+        <h2>Fotos</h2>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <h1>Fotos</h1>
-            <hr />
+            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="./images/imagen1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="./images/markzuk.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/imagen2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="./images/instagramhead.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/imagen3.jfif" alt="Third slide">
+                    <img class="d-block w-100" src="./images/insta-office-ny.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/wallstreetmark.jpg" alt="4th slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -227,7 +232,7 @@
         </div>
 
         <div class="apps">
-            <h1>Facebook no es sólo Facebook...</h1>
+            <h2>Facebook no es sólo Facebook...</h2>
             <hr />
             <p class="textApps">
                 Analizando cada una de las compras de Facebook desde su fundación, se habla que estas tendrían un valor
@@ -237,9 +242,9 @@
             <div class="contenedor1">
                 <div class="row">
                     <div class="col-sm">
-                        <img class="iconosApps" src="images/icono_whatsapp.png" alt="icono_whatsapp">
+                        <i class="fab fa-whatsapp-square"></i>
                         <h3>Whatsapp</h3>
-                        <p class="costo">19 billones</p>
+                        <p class="costo">USD 19.000 millones</p>
                         <p class="infoApps">Busando dominar la mensajería en línea, la aplicación de 5 años tenía 450
                             millones de usuarios en el momento de la adquisición, añadiendo un millón de usuarios cada
                             día.
@@ -247,17 +252,17 @@
 
                     </div>
                     <div class="col-sm">
-                        <img class="iconosApps" src="images/icono_oculus.png" alt="icono_oculus">
+                        <img class="iconosApps oculus-img" src="images/oculuslogo.jpg" alt="icono_oculus"/>
                         <h3>Oculus</h3>
-                        <p class="costo">2 billones</p>
+                        <p class="costo">USD 2.000 millones</p>
                         <p class="infoApps">Oculus crea un casco de realidad virtual que cubre los ojos de los usuarios
                             y
                             los sumerge en un ambiente virtual que responde a los movimientos de su cabeza.</p>
                     </div>
                     <div class="col-sm">
-                        <img class="iconosApps" src="images/icono_instagram.png" alt="icono_instagram">
+                        <i class="fab fa-instagram-square"></i>
                         <h3>Instagram</h3>
-                        <p class="costo">1 billón</p>
+                        <p class="costo">USD 1000 millones</p>
                         <p class="infoApps">“Proveer la mejor experiencia para compartir fotos es una razón por la que a
                             tanta gente le encanta Facebook y nosotros sabíamos que sería valioso unir esas dos
                             compañías”,
@@ -267,17 +272,17 @@
                 </div>
             </div>
 
-            <p> El resto de las adquisiciones de Facebook (5%) se reparten en diversas compras, no tan difundidas.
+            <p class="text-apps"> El resto de las adquisiciones de Facebook (5%) se reparten en diversas compras, no tan difundidas.
                 Algunas
                 de ellas son:</p>
 
-            <div class="contenedor2">
+            <div class="contenedor1">
                 <div class="row">
                     <div class="col-sm">
-                        <img class="iconosApps2" src="images/icono_face.com.jpg" alt="face.comm">
-                        <h4>Face.com</h4>
-                        <p class="costo2">100 millones</p>
-                        <p class="infoApps2">
+                        <img class="iconosApps2" src="images/icono_face.com.jpg" alt="face.com">
+                        <h3>Face.com</h3>
+                        <p class="costo">USD 100 millones</p>
+                        <p class="infoApps">
                             Era una compañía israelí que es capaz de reconocer los rostros de los usuarios y los
                             etiqueta
                             con sus nombres.
@@ -285,32 +290,32 @@
                     </div>
                     <div class="col-sm">
                         <img class="iconosApps2" src="images/icono_atlas.png" alt="atlas">
-                        <h4>Atlas Advertiser Suite</h4>
-                        <p class="costo2">100 millones</p>
-                        <p class="infoApps2">
+                        <h3>Atlas Advertiser</h3>
+                        <p class="costo">USD 100 millones</p>
+                        <p class="infoApps">
                             Descubre gustos e intereses de los usuarios y los conecta con patrocinadores.
                         </p>
                     </div>
                     <div class="col-sm">
                         <img class="iconosApps2" src="images/icono_snaptu.png" alt="snapTu">
-                        <h4>Snaptu</h4>
-                        <p class="costo2">70 millones</p>
-                        <p class="infoApps2"> Integrar todo tipo de software, independientemente de la plataforma.
+                        <h3>Snaptu</h3>
+                        <p class="costo">USD 70 millones</p>
+                        <p class="infoApps"> Integrar todo tipo de software, independientemente de la plataforma.
                             Usado para adaptar servicios de la app de Facebook a todo tipo de móviles.
                         </p>
                     </div>
                     <div class="col-sm">
                         <img class="iconosApps2" src="images/icono_friendsfeed.png" alt="friendsFeed">
-                        <h4>FriendFeed</h4>
-                        <p class=costo2>47.5 millones</p>
-                        <p class="infoApps2"> Agrega y agrupa actualizaciones de las redes sociales, los blogs y otros
+                        <h3>FriendFeed</h3>
+                        <p class=costo>USD 47.5 millones</p>
+                        <p class="infoApps"> Agrega y agrupa actualizaciones de las redes sociales, los blogs y otros
                             servicios favoritos de los usuarios.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <h1>Conocé más sobre otras de las aplicaciones que tiene Facebook</h1>
+            <h2>Conocé más sobre otras de las aplicaciones que tiene Facebook</h2>
             <hr />
             <div class="aplicaciones">
                 <a class="apps" href="https://www.instagram.com/" target="_blank" title="Ir a Instagram"><img
@@ -484,13 +489,14 @@
     </main>
 
     <footer>
-        <p class="leftF">
-            CopyRight © 2020 — Facebook |
-        </p>
+        
         <p class="middleF">
             <a href="https://www.facebook.com/legal/terms">Condiciones</a>
             <a href="https://www.facebook.com/about/privacy">Política de datos</a>
             <a href="https://www.facebook.com/communitystandards/">Normas Comunitarias</a>
+        </p>
+        <p class="middleF">
+            Coded by Gabriel, Juan Cruz, Leila, Silvana y Pablo — |Facebook Landing Page for Acámica|
         </p>
     </footer>
 
